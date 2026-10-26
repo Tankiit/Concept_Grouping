@@ -1,0 +1,26 @@
+# Development-only run matrix.  This is not a preregistered certification config.
+defaults:
+  data_root: /home/mukherjee/research/data
+  output_root: runs/real_mnist_variations
+  epochs: 100
+  train_size: 60000
+  batch_size: 512
+  lr: 0.003
+  min_lr: 0.00001
+  log_every: 10
+  checkpoint_every: 1
+  seed: 7
+  rho_train: 0.95
+  rho_id: 0.95
+  rho_shift: 0.05
+
+variations:
+  joint_cbm:
+    label_loss_weight: 1.0
+    concept_loss_weight: 1.0
+  label_only:
+    label_loss_weight: 1.0
+    concept_loss_weight: 0.0
+  concept_only:
+    label_loss_weight: 0.0
+    concept_loss_weight: 1.0

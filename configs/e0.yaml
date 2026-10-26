@@ -1,0 +1,3 @@
+experiment: e0
+seed: 0
+thresholds: configs/thresholds.yaml

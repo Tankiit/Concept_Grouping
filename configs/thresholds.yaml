@@ -1,0 +1,7 @@
+# Replace every ??? with preregistered numerical or categorical choices.
+# scripts/prereg_lock.py refuses to create a lock until this file is complete.
+read_path_alpha: ???
+write_path_alpha: ???
+multiple_testing: ???
+mmd_kernel: ???
+e0_mixture_grid: ???
